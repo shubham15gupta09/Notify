@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Post | Notify
+    </title>
+</head>
+
+<body style="margin: 10px;font-family: 'Calibri'">
+    <p style="font-size: small;color: brown;">Post Can be Done by an Authorized Person Only !!!<br>
+        <span style="font-size: small;color:black;">If you want to view Notification
+            <a href="view.html"> Click Here </a><span></p>
+    <div style="margin: 3px;font-family: cursive;text-align:center">
+        <h3 style="color: blue;"> Enter Notification Details </h3>
+    </div>
+    <p><span style="color: red;font-size:small;">*</span>All fields are required </p>
+    <div style="margin: 20px;font-family: cursive;text-align:left">
+        <form>
+            <p><span style="color: red;">*</span>Heading : <input type="text" name="postname" id="postname"
+                    placeholder=" Title for Notification " required></p>
+            <p><span style="color: red;">*</span>Date : <input type="date" id="date" name="date" value="2020-01-01"
+                    required><span style="font-size: x-small;">mm/dd/yy format</span></p>
+            <p><span style="color: red;">*</span>Content : <textarea name="Content" rows="7" cols="25" id="Content"
+                    placeholder=" Discription of Notification " required></textarea></p>
+            <p><span style="color: red;">*</span>Posted By : <input type="text" name="postedby" id="postedby"
+                    placeholder=" Your Name " required></p>
+            <p><span style="color: red;">*</span>Unique Id No. : <input type="number" name="uid" id="uid"
+                    placeholder=" Your Faculty ID " required></p>
+            <button onclick="getpost()" style="padding: 3px;margin: 3px;"> Post Notification </button>
+        </form>
+    </div>
+    <p>Guide :<br>
+        Heading : Stands for the title of a Notification<br>
+        Date : Can be for the event / workshop etc<br>
+        Content : Can have a short description <br>
+        Posted by : Is your Name<br>
+        Unique Id : Is your faculty Id
+    </p>
+</body>
+
+</html>

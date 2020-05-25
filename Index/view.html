@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        View | Notify
+    </title>
+</head>
+
+<body style="margin: 20px;font-family: cursive;text-align: center;">
+    <h3> Please Select the Date for which you want to see the Notification </h3>
+    <input type="date" id="Date" value="2014-02-09"><br>
+    <button onclick="getDate()" style="padding: 5px;margin: 20px;"> View </button>
+    <p id="demo"></p>
+</body>
+<script>
+    function getDate() {
+        var date = document.getElementById("Date").value;
+        document.getElementById("demo").innerHTML = date;
+    }
+</script>
+
+</html>
