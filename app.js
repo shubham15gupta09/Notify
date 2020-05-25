@@ -4,10 +4,10 @@ const app = express() ;
 app.get("/" , ( req , res ) => {
     res.sendFile( __dirname + "/Index/home.html") ;
 }) ;
-app.get("/post.html" , ( req , res ) => {
+app.get("/Index/post.html" , ( req , res ) => {
     res.sendFile( __dirname + "/Index/post.html") ;
 }) ;
-app.get("/view.html" , ( req , res ) => {
+app.get("/Index/view.html" , ( req , res ) => {
     res.sendFile( __dirname + "/Index/view.html") ;
 }) ;
 
