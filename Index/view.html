@@ -7,11 +7,17 @@
     </title>
 </head>
 
-<body style="margin: 20px;font-family: cursive;text-align: center;">
-    <h3> Please Select the Date for which you want to see the Notification </h3>
-    <input type="date" id="Date" value="2014-02-09"><br>
-    <button onclick="getDate()" style="padding: 5px;margin: 20px;"> View </button>
-    <p id="demo"></p>
+<body style="margin: 10px;font-family: cursive;">
+    <p style="font-size: small;color: brown;">This page is only to view the Notification !!!<br>
+        <span style="font-size: small;color:black;">If you want to post Notification
+            <a href="./post.html"> Click Here </a><span></p>
+    <div style="margin: 10px;font-family: cursive;text-align:center">
+        <h3> Please Select the Date for which you want to see the Notification </h3>
+        <input type="date" id="Date" value="2014-02-09"><br>
+        <button onclick="getDate()" style="padding: 5px;margin: 20px;"> View </button>
+        <p id="demo"></p>
+    </div>
+
 </body>
 <script>
     function getDate() {
