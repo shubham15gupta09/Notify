@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,20 +13,17 @@
     <p style="font-size: small;color: brown;">This page is only to view the Notification !!!<br>
         <span style="font-size: small;color:black;">If you want to post Notification
             <a href="./post.html"> Click Here </a><span></p>
-                
+
     <div style="margin: 10px;font-family: cursive;text-align:center">
         <h3> Please Select the Date for which you want to see the Notification </h3>
-        <input type="date" id="Date" value="2014-02-09"><br>
-        <button onclick="getDate()" style="padding: 5px;margin: 20px;"> View </button>
-        <p id="demo"></p>
+
+        <form action="/view" method="POST" style="padding: 10px;margin: 10px;">
+            <p><span style="color: red;">*</span>Date : <input type="text" id="date" name="date" placeholder="dd-mm-yy format" required>
+                <span style="font-size: x-small;">dd-mm-yy format</span></p>
+            <button style="padding: 5px;margin: 20px;"> View </button>
+        </form>
     </div>
 
 </body>
-<script>
-    function getDate() {
-        var date = document.getElementById("Date").value;
-        document.getElementById("demo").innerHTML = date;
-    }
-</script>
 
 </html>
