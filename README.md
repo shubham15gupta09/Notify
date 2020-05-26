@@ -27,9 +27,9 @@ A Node Js App for Managing all Notifications by Organizations
 </ul>
 
 ## How to Use
-<p>
+<p>1) :First thing first 
   
-1) : first of All```npm install```
+```npm install```
 </p>
 <p>2) : Create an account on MongDb Atlas and make a project , in that make a cluster </p>
 <p>3) : Get the username and password and create a file called "key.js" in root directory with the follwoing content 
