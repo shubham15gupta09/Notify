@@ -59,12 +59,9 @@ app
             .find({
                 date: req.body.date,
             })
+            .sort({"date":1})
             .select("postname date Content postedby")
             .then((result) => {
-                console.log({
-                    message: "Entered into DB",
-                    Post: result,
-                });
                 res.send({
                     message: "Notification for the selected Date : "+result[0].date ,
                     Info: result,
@@ -78,6 +75,7 @@ app
     .get("/viewall" , (req,res)=>{
         schema
         .find({})
+        .sort({"date":1})
         .select("postname date Content postedby")
         .then((result) => {
             res.send({
