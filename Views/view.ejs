@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        View | Notify
+    </title>
+</head>
+
+<body style="margin: 10px;font-family: 'Calibri';background-color:black;align-content: center;">
+    <p style="font-size: small;color: white;">This page is only to view the Notification !!!<br>
+        <span style="font-size: small;color:white;">
+            <a href="./home.html"> HOME </a><span></p>
+    <h2 style="color: aliceblue;margin: 20px;padding: 10px ;font-family: cursive;text-align:center;"> Notification </h2>
+    <% var i = 1 ; %>
+    <% for(var itr of value) { %>
+        <div style="margin: 20px;padding: 10px ;font-family: cursive;text-align:left;background-color: bisque;">
+            <p>Notification no. : <%= i++ %> </p>
+            <p>Title <br /><%=itr.postname %> </p>
+            <p>Date <br /><%=itr.date %> </p>
+            <p>Content <br /><%=itr.Content %> </p>
+            <p>Posted By <br /><%=itr.postedby %> </p>
+        </div>
+    <% } %>
+
+
+</body>
+</html>

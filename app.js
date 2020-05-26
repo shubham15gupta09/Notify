@@ -16,6 +16,7 @@ mongoose.connect(
     },
     () => console.log("DB Connected")
 );
+app.set('view engine', 'ejs'); 
 
 app.use(morgan("dev"));
 app.use(
@@ -27,13 +28,19 @@ app.use(bodyParser.json({}));
 
 app
     .get("/", (req, res) => {
-        res.sendFile(__dirname + "/View/home.html");
+        res.sendFile(__dirname + "/Views/home.html");
     })
-    .get("/View/post.html", (req, res) => {
-        res.sendFile(__dirname + "/View/post.html");
+    .get("/Views/post.html", (req, res) => {
+        res.sendFile(__dirname + "/Views/post.html");
     })
-    .get("/View/view.html", (req, res) => {
-        res.sendFile(__dirname + "/View/view.html");
+    .get("/Views/home.html", (req, res) => {
+        res.sendFile(__dirname + "/Views/home.html");
+    })
+    .get("/home.html", (req, res) => {
+        res.sendFile(__dirname + "/Views/home.html");
+    })
+    .get("/Views/view.html", (req, res) => {
+        res.sendFile(__dirname + "/Views/view.html");
     })
     .post("/data", (req, res) => {
         schema
@@ -62,11 +69,9 @@ app
             .sort({"date":1})
             .select("postname date Content postedby")
             .then((result) => {
-                res.send({
-                    message: "Notification for the selected Date : "+result[0].date ,
-                    Info: result,
-                    Go_to_home: "http://localhost:3000/",
-                });
+                    res.render("view.ejs" ,{
+                        value :result
+                    } ) ;
             })
             .catch((err) => {
                 console.log(err);
@@ -78,11 +83,9 @@ app
         .sort({"date":1})
         .select("postname date Content postedby")
         .then((result) => {
-            res.send({
-                message: "All Notification",
-                Info: result,
-                Go_to_home: "http://localhost:3000/",
-            });
+            res.render("view.ejs" ,{
+                value :result
+            } ) ;
         })
         .catch((err) => {
             console.log(err);
