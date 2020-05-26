@@ -27,7 +27,7 @@ A Node Js App for Managing all Notifications by Organizations
 </ul>
 
 ## How to Use
-<p> 
+<p>
   
 1) : first of All```npm install```
 </p>
@@ -43,8 +43,7 @@ A Node Js App for Managing all Notifications by Organizations
 module.exports = values() ;
 ````
 </p>
-<p>4) :That's It </p>
-<p>
+<p>4) :That's It 
   
-5) :```npm start```
- </p>
+```npm start```
+</p>
