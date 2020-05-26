@@ -25,3 +25,26 @@ A Node Js App for Managing all Notifications by Organizations
   <li> Notification By Date Result </li>
     <img src = "images/six.png">
 </ul>
+
+## How to Use
+<p> 
+  
+1) : first of All```npm install```
+</p>
+<p>2) : Create an account on MongDb Atlas and make a project , in that make a cluster </p>
+<p>3) : Get the username and password and create a file called "key.js" in root directory with the follwoing content 
+  
+```
+  const values = ()=>{
+    const user_name = "<username>" ;
+    const password = "<password>" ;
+    return [user_name,password ]  ;
+}
+module.exports = values() ;
+````
+</p>
+<p>4) :That's It </p>
+<p>
+  
+5) :```npm start```
+ </p>
