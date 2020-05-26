@@ -54,12 +54,7 @@ app
             .catch((err) => {
                 console.log(err);
             });
-
-        res.send({
-            message: "Got the information",
-            data: req.body,
-            Go_to_home: "http://localhost:3000/",
-        });
+            res.sendFile(__dirname + "/Views/home.html");
     })
     .post("/view", (req, res) => {
         schema
