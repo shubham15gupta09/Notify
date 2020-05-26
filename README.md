@@ -9,7 +9,7 @@ A Node Js App for Managing all Notifications by Organizations
 
 ## Tech Stack Used
 <ul>
-  <li> HTML , CSS , JS </li>
+  <li> HTML , CSS , JS , ejs</li>
   <li> Node js , Expres </li>
   <li> MongoDB </li>
 </ul>
