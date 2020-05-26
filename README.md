@@ -1,5 +1,5 @@
 # Notify
-A Node Js App for Managing all Notifications by College
+A Node Js App for Managing all Notifications by Organizations
 
 ## Why This PWA
 <p> This PWA can be usefull with for Organization / College / School etc to manage Notification to there Employee / Students </p>
