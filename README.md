@@ -12,20 +12,6 @@ A Node Js App for Managing all Notifications by Organizations
   <li> MongoDB </li>
 </ul>
 
-## Result
-<ul>
-  <li> Home </li>
-    <img src = "images/one.png">
-  <li> Filling Notification Details </li>
-    <img src = "images/two.png">
-  <li> All Notification </li>
-    <img src = "images/four.png">
-  <li> Notification By Date </li>
-    <img src = "images/five.png">
-  <li> Notification By Date Result </li>
-    <img src = "images/six.png">
-</ul>
-
 ## How to Use
 <p>1) :First thing first 
   
@@ -47,3 +33,7 @@ module.exports = values() ;
   
 ```npm start```
 </p>
+
+## Result
+
+<img src = "img.png">
