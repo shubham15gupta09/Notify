@@ -1,4 +1,4 @@
-# College_Notify
+# Notify
 A Node Js App for Managing all Notifications by College
 
 ## Why This PWA
