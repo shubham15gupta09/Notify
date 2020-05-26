@@ -2,7 +2,7 @@
 A Node Js App for Managing all Notifications by Organizations
 
 
-## Why This PWA
+## Why This WebApp
 <p> This PWA can be usefull with for Organization / College / School etc to manage Notification to there Employee / Students </p>
 <p> This will help them to pass the notification easily to everyone without Delay</p>
 
