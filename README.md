@@ -17,7 +17,7 @@ A Node Js App for Managing all Notifications by Organizations
 
 ## Features
 <ul>
-  <li> Post a Notifification / Reminder etc (By authorized person only ) </li>
+  <li> Post a Notifification / Reminder etc ( By authorized person only ) </li>
   <li> View All the Notification </li>
   <li> View Notification of a particular Date </li>
 </ul>
