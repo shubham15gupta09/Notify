@@ -36,4 +36,4 @@ module.exports = values() ;
 
 ## Result
 
-<img src = "img.png">
+<img src = "image.png">
