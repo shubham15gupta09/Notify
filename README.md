@@ -1,32 +1,17 @@
 # Notify
 A Node Js App for Managing all Notifications by Organizations
 
-
-## Deployment
-Deployed using Microsoft Azure App service : https://notiffy.azurewebsites.net/
-
-
-## Why This WebApp
+## Why This PWA
 <p> This PWA can be usefull with for Organization / College / School etc to manage Notification to there Employee / Students </p>
 <p> This will help them to pass the notification easily to everyone without Delay</p>
 
-
 ## Tech Stack Used
 <ul>
-  <li> HTML , CSS , JS , ejs</li>
+  <li> HTML , CSS , JS </li>
   <li> Node js , Expres </li>
   <li> MongoDB </li>
 </ul>
 
-
-## Features
-<ul>
-  <li> Post a Notifification / Reminder etc ( By authorized person only ) </li>
-  <li> View All the Notification </li>
-  <li> View Notification of a particular Date </li>
-</ul>
-  
-  
 ## How to Use
 <p>1) :First thing first 
   
@@ -49,7 +34,6 @@ module.exports = values() ;
 ```npm start```
 </p>
 
-
 ## Result
-<img src = "image.png">
 
+<img src = "image.png">

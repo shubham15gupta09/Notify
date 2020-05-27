@@ -1,14 +1,12 @@
 const schema = require("./Model/schema");
-const credentials = require("./key") ;
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 
-const val = credentials ;
 const uri =
-    "mongodb+srv://"+val[0]+":"+val[1]+"@cluster0-khprr.mongodb.net/test?retryWrites=true&w=majority";
+    "mongodb+srv://eg_2:eg_2@cluster0-khprr.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(
     uri, {
         useUnifiedTopology: true,
@@ -86,7 +84,7 @@ app
             console.log(err);
         });        
     }) ;
-
-app.listen(3000, () => {
-    console.log("Server started at http://localhost:3000/");
+const PORT = process.env.PORT || 8080 ;
+app.listen(PORT, () => {
+    console.log(`Server started at http://localhost:${PORT}/`);
 });
