@@ -1,7 +1,7 @@
 # Notify
 A Node Js App for Managing all Notifications by Organizations
 
-## deployment
+## Deployment
 Deployed using Micorosoft Azure Web App Services : https://notiffy.azurewebsites.net/
 
 ## Why This PWA
