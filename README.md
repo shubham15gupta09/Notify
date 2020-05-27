@@ -11,7 +11,7 @@ Deployed using Micorosoft Azure Web App Services : https://notiffy.azurewebsites
 ## Tech Stack Used
 <ul>
   <li> HTML , CSS , JS , ejs</li>
-  <li> Node js , Expres </li>
+  <li> Node js , Express </li>
   <li> MongoDB </li>
 </ul>
 
