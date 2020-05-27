@@ -8,24 +8,24 @@
     </title>
 </head>
 
-<body style="margin: 10px;font-family: 'Calibri';background-color: bisque;">
+<body style="margin: 10px;background-color: bisque;">
 
     <p style="font-size: small;color: brown;">Post Can be Done by an Authorized Person Only !!!<br>
         <span style="font-size: small;color:black;">
             <a href="./home.html"> HOME </a><span></p>
 
-    <div style="margin: 10px;font-family: cursive;text-align:center">
+    <div style="margin: 10px;text-align:center">
         <h3 style="color: blue;"> Enter Notification Details </h3>
     </div>
 
     <p><span style="color: red;font-size:small;text-align:center">*</span>All fields are required </p>
 
-    <div style="margin: 20px;font-family: cursive;text-align:left">
+    <div style="margin: 20px;text-align:left">
         <form action="/data" method="POST" style="padding: 10px;margin: 10px;">
             <p><span style="color: red;">*</span>Heading : <input type="text" name="postname" id="postname"
                     placeholder=" Title for Notification " required></p>
-            <p><span style="color: red;">*</span>Date : <input type="text" id="date" name="date" placeholder="dd-mm-yy format" required>
-                <span style="font-size: x-small;">dd-mm-yy format</span></p><span style="color: red;">*</span>Content :
+            <p><span style="color: red;">*</span>Date : <input type="date" id="date" name="date" placeholder="mm-dd-yy format" required>
+                </p><span style="color: red;">*</span>Content :
             <p> <textarea name="Content" rows="7" cols="" id="Content"
                     placeholder=" Discription of Notification " required></textarea></p>
             <p><span style="color: red;">*</span>Posted By : <input type="text" name="postedby" id="postedby"

@@ -8,19 +8,23 @@
     </title>
 </head>
 
-<body style="margin: 10px;font-family: 'Calibri';background-color:black;align-content: center;">
-    <p style="font-size: small;color: white;">This page is only to view the Notification !!!<br>
+<body style="margin: 10px;background-color:black;align-content: center;">
+    <p style="color: white;"><b>This page is only to view the Notification !!!</b><br>
         <span style="font-size: small;color:white;">
             <a href="./home.html"> HOME </a><span></p>
-    <h2 style="color: aliceblue;margin: 20px;padding: 10px ;font-family: cursive;text-align:center;"> Notification </h2>
+    <h2 style="color: aliceblue;margin: 20px;padding: 10px ;text-align:center;"> <b>Notification</b> </h2>
     <% var i = 1 ; %>
+    <% if(value.length == 0){%>
+        <p style="margin: 20px;padding: 10px ;text-align:left;color: aliceblue;">
+            No Notification Available for the selected Date !!<br> <a href="/Views/view.html">Go back</a></p>
+    <%}%>   
     <% for(var itr of value) { %>
-        <div style="margin: 20px;padding: 10px ;font-family: cursive;text-align:left;background-color: bisque;">
-            <p>Notification no. : <%= i++ %> </p>
-            <p>Title <br /><%=itr.postname %> </p>
-            <p>Date <br /><%=itr.date %> </p>
-            <p>Content <br /><%=itr.Content %> </p>
-            <p>Posted By <br /><%=itr.postedby %> </p>
+        <div style="margin: 20px;padding: 10px ;text-align:left;background-color: bisque;">
+            <p><b>Notification no. : </b><%= i++ %> </p>
+            <p><b>Title</b> <br /><%=itr.postname %> </p>
+            <p><b>Date & Time</b><br /><%=itr.date %> </p>
+            <p><b>Content </b><br /><%=itr.Content %> </p>
+            <p><b>Posted By </b><br /><%=itr.postedby %> </p>
         </div>
     <% } %>
 
