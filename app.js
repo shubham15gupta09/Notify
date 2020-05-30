@@ -4,9 +4,8 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-
 const uri =
-    "mongodb+srv://<Username>:<password>@cluster0-khprr.mongodb.net/test?retryWrites=true&w=majority";
+    "mongodb+srv://eg_2:eg_2@cluster0-khprr.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(
     uri, {
         useUnifiedTopology: true,

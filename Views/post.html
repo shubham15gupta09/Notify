@@ -24,10 +24,11 @@
         <form action="/data" method="POST" style="padding: 10px;margin: 10px;">
             <p><span style="color: red;">*</span>Heading : <input type="text" name="postname" id="postname"
                     placeholder=" Title for Notification " required></p>
-            <p><span style="color: red;">*</span>Date : <input type="date" id="date" name="date" placeholder="mm-dd-yy format" required>
-                </p><span style="color: red;">*</span>Content :
-            <p> <textarea name="Content" rows="7" cols="" id="Content"
-                    placeholder=" Discription of Notification " required></textarea></p>
+            <p><span style="color: red;">*</span>Date : <input type="date" id="date" name="date"
+                    placeholder="mm-dd-yy format" required>
+            </p><span style="color: red;">*</span>Content :
+            <p> <textarea name="Content" rows="7" cols="" id="Content" placeholder=" Discription of Notification "
+                    required></textarea></p>
             <p><span style="color: red;">*</span>Posted By : <input type="text" name="postedby" id="postedby"
                     placeholder=" Your Name " required></p>
             <p><span style="color: red;">*</span>Unique Id No. : <input type="number" name="uid" id="uid"
@@ -35,8 +36,8 @@
             <button onclick="alertfn()" style="padding: 3px;margin: 3px;"> Post Notification </button>
         </form>
         <script>
-            const alertfn = ()=>{
-                alert("Posted Successfully\nRedirecting to HOME") ;
+            const alertfn = () => {
+                alert("Posted Successfully\nRedirecting to HOME");
             }
         </script>
     </div>

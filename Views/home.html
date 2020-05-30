@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>
         Home | Notify
@@ -8,14 +9,54 @@
 </head>
 
 <body style="margin: 10px;background-color: bisque;">
+    <br><br>
+    <h1 style="margin: 10px;text-align:center">Welcome to Notification Management System</h1>
+    <div style="margin: 10px;text-align:center" class="divi">
 
-    <div style="margin: 10px;text-align:center"> 
-        <a href = "../Views/post.html"><h3> Post a Notification </h3></a>
-        <a href = "../viewall"><h3> View All Notifications </h3></a>
-        <a href = "../Views/view.html"><h3> View Notifications by Date </h3></a>
+        <a href="../Views/post.html"><button class="button">
+                <h4> Post a Notification </h4>
+            </button></a><br>
+        <a href="../viewall"><button class="button ">
+                <h4> View All Notifications </h4>
+            </button></a><br>
+        <a href="../Views/view.html"><button class="button ">
+                <h4> View Notifications by Date </h4>
+            </button></a>
+        <br><br><br>
+        <h3 style="margin: 10px;">Want to Contribute <br><a href="https://github.com/shubham15gupta09/Notify">
+                Github</a>
+        </h3>
     </div>
+    <style>
+        .button {
+            background-color: grey;
+            width: 100%;
+            max-width: 250px;
+            border: none;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid red;
+        }
 
-<br><br><br>
-    <p style="margin: 10px;text-align:center">Want to Contribute ?? Here is the GitHub <a href="https://github.com/shubham15gupta09/Notify"> Link </a></p>
+        .divi {
+            position: fixed;
+            top: 25%;
+            left: 25%;
+            right: 25%;
+            bottom: 25%;
+        }
+    </style>
+
+
 </body>
+
 </html>
